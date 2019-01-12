@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btn_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scanner"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Code:"
+        android:id="@+id/product_code"
+        android:layout_below="@+id/btn_scanner"
+        />
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_below="@+id/product_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <Button
+        android:id="@+id/btn_cart"
+        android:text="Add to cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item"
+        />
+</RelativeLayout>
